@@ -1,0 +1,19 @@
+:root {
+    --variable-collection-primary: rgba(244, 120, 32, 1);
+    --variable-collection-gray: rgba(150, 150, 150, 1);
+    --variable-collection-light-gray: rgba(238, 238, 238, 1);
+    --variable-collection-canabis: rgba(0, 104, 56, 1);
+    --variable-collection-lightgray: rgba(238, 238, 238, 1);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding:0;
+}
+
+

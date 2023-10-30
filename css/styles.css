@@ -1,0 +1,61 @@
+.delivery-regions {
+    width: 620px;
+    height: 556px;
+  }
+  
+  .delivery-regions .group {
+    width: 624px;
+    height: 556px;
+  }
+  
+  .delivery-regions .overlap-group {
+    position: relative;
+    width: 620px;
+    height: 556px;
+    background-color: #ffdac0;
+    border-radius: 30px;
+    box-shadow: 0px 4px 23px 23px #00000008;
+  }
+  
+  .delivery-regions .overlap {
+    position: absolute;
+    width: 512px;
+    height: 354px;
+    top: 131px;
+    left: 54px;
+    background-image: url(./img/rectangle-48.png);
+    background-size: 100% 100%;
+  }
+  
+  .delivery-regions .img {
+    position: absolute;
+    width: 378px;
+    height: 320px;
+    top: 18px;
+    left: 67px;
+  }
+  
+  .delivery-regions .we-serve-all {
+    position: absolute;
+    top: 38px;
+    left: 41px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 62px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .delivery-regions .we-are-delighted-to {
+    position: absolute;
+    top: 82px;
+    left: 54px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
