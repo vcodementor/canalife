@@ -7,7 +7,10 @@
   <!-- displays site properly based on user's device -->
   <title>Home</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/32x32.png">
+  <!--  Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/globals.css" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -161,10 +164,10 @@
                     <div
                       class="shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] bg-orange-500 flex w-[155px] max-w-full grow flex-col mt-52 px-5 py-5 rounded-xl self-start max-md:mt-10">
                       <a href="products.html">
-                      <div class="text-white text-center text-base font-semibold self-center whitespace-nowrap">
-                        Shop Now
-                      </div>
-                    </a>
+                        <div class="text-white text-center text-base font-semibold self-center whitespace-nowrap">
+                          Shop Now
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -267,7 +270,7 @@
       </div>
     </div>
     <div
-      class="bg-zinc-100 self-center flex w-full max-w-[1312px] flex-col mt-52 pt-12 pb-8 px-5 rounded-[30px] max-md:max-w-full max-md:mt-10">
+      class=" relative bg-zinc-100 self-center flex w-full max-w-[1312px] flex-col mt-52 pt-12 pb-8 px-5 rounded-[30px] max-md:max-w-full max-md:mt-10">
       <div class="text-orange-500 text-4xl font-bold ml-10 self-start whitespace-nowrap max-md:ml-2.5">
         Some Awesome
       </div>
@@ -275,65 +278,63 @@
         Review Highlights
       </div>
       <div class="self-center w-full max-w-[1270px] mt-10 max-md:max-w-full">
-        <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div class="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-            <div class="grow max-md:max-w-full max-md:mt-10">
-              <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                <div class="flex flex-col items-stretch w-[5%] max-md:w-full max-md:ml-0">
-                  <img loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/93b84ea6-818d-4369-892e-c80fdd402a08?"
-                    class="aspect-square object-cover object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+
+            <!-- Slide 1 -->
+
+            <!-- Your card content for Slide 1 -->
+            <div class="swiper-slide flex flex-col items-stretch w-full ml-5 max-md:w-full max-md:ml-0">
+              <div
+                class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-10 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
+                <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua
                 </div>
-                <div class="flex flex-col items-stretch w-[95%] ml-5 max-md:w-full max-md:ml-0">
-                  <div
-                    class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-10 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
-                    <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua
-                    </div>
-                    <img loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfdf6edc-e475-4b64-8a06-11404b23af09?"
-                      class="aspect-square object-cover object-center w-[66px] overflow-hidden self-center max-w-full mt-10" />
-                    <div class="text-black text-center text-base self-center mt-4 whitespace-nowrap">
-                      John Doe
-                    </div>
-                  </div>
+                <img loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfdf6edc-e475-4b64-8a06-11404b23af09?"
+                  class="aspect-square object-cover object-center w-[66px] overflow-hidden self-center max-w-full mt-10" />
+                <div class="text-black text-center text-base self-center mt-4 whitespace-nowrap">
+                  John Doe
                 </div>
               </div>
             </div>
-          </div>
-          <div class="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
-            <div class="grow max-md:max-w-full max-md:mt-10">
-              <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                <div class="flex flex-col items-stretch w-[95%] max-md:w-full max-md:ml-0">
-                  <div
-                    class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-9 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
-                    <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua
-                    </div>
-                    <img loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e51abd0e-f5f1-46bf-9ef5-37edb00c0311?"
-                      class="aspect-square object-cover object-center w-[66px] overflow-hidden self-center max-w-full mt-10" />
-                    <div class="text-black text-center text-base self-center mt-4 whitespace-nowrap">
-                      Mary Jane
-                    </div>
-                  </div>
+
+
+            <!-- Slide 2 -->
+            <!-- Your card content for Slide 2 -->
+            <div class="swiper-slide flex flex-col items-stretch w-full max-md:w-full max-md:ml-0">
+              <div
+                class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-9 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
+                <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua
                 </div>
-                <div class="flex flex-col items-stretch w-[5%] ml-5 max-md:w-full max-md:ml-0">
-                  <img loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3687a4b-1f25-4b65-a965-cb5e00c81dc3?"
-                    class="aspect-square object-cover object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
+                <img loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e51abd0e-f5f1-46bf-9ef5-37edb00c0311?"
+                  class="aspect-square object-cover object-center w-[66px] overflow-hidden self-center max-w-full mt-10" />
+                <div class="text-black text-center text-base self-center mt-4 whitespace-nowrap">
+                  Mary Jane
                 </div>
               </div>
             </div>
+
+            <!-- Add more slides as needed -->
+
           </div>
+
+          <!-- Add pagination and navigation buttons if desired -->
+          <div class="swiper-pagination"></div>
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/93b84ea6-818d-4369-892e-c80fdd402a08?"
+            class="swiper-button-prev aspect-square object-cover object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3687a4b-1f25-4b65-a965-cb5e00c81dc3?"
+            class="swiper-button-next aspect-square object-cover object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
         </div>
       </div>
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7721616c-4c88-4deb-aef9-c002ef679053?"
-        class="aspect-[2.9] object-cover object-center w-[58px] overflow-hidden max-w-full ml-10 mt-20 self-start max-md:ml-2.5 max-md:mt-10" />
     </div>
     <div class="self-stretch flex flex-col mt-52 px-5 max-md:max-w-full max-md:mr-px max-md:mt-10">
       <div class="text-orange-500 text-4xl font-bold ml-20 self-start whitespace-nowrap max-md:ml-2.5">
@@ -344,29 +345,20 @@
       <div class="grid grid-cols-3 gap-3 ">
         <div class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] flex w-[426px] flex-col rounded-3xl">
           <div class="bg-white self-stretch flex grow flex-col w-full pl-px py-16 rounded-3xl max-md:max-w-full">
-            <img
-              loading="lazy"
-              srcset="./assets/imgs/0-1-7.png"
-              class="aspect-[1.23] object-cover object-center w-full overflow-hidden self-stretch"
-            />
+            <img loading="lazy" srcset="./assets/imgs/0-1-7.png"
+              class="aspect-[1.23] object-cover object-center w-full overflow-hidden self-stretch" />
           </div>
         </div>
         <div class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] flex w-[426px] flex-col rounded-3xl">
           <div class="bg-white self-stretch flex grow flex-col w-full pl-px py-16 rounded-3xl max-md:max-w-full">
-            <img
-              loading="lazy"
-              srcset="./assets/imgs/0-1-8.png"
-              class="aspect-[1.23] object-cover object-center w-full overflow-hidden self-stretch"
-            />
+            <img loading="lazy" srcset="./assets/imgs/0-1-8.png"
+              class="aspect-[1.23] object-cover object-center w-full overflow-hidden self-stretch" />
           </div>
         </div>
         <div class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] flex w-[426px] flex-col rounded-3xl">
           <div class="bg-white self-stretch flex grow flex-col w-full pl-px py-16 rounded-3xl max-md:max-w-full">
-            <img
-              loading="lazy"
-              srcset="./assets/imgs/0-1-6.png"
-              class="aspect-[1.23] object-cover object-center w-full overflow-hidden self-stretch"
-            />
+            <img loading="lazy" srcset="./assets/imgs/0-1-6.png"
+              class="aspect-[1.23] object-cover object-center w-full overflow-hidden self-stretch" />
           </div>
         </div>
       </div>
@@ -504,8 +496,9 @@
                   class="bg-orange-500 flex w-full grow flex-col mt-5 px-5 py-4 rounded-3xl self-start max-md:max-w-full">
                   <img loading="lazy" srcset="./assets/imgs/group-6.png"
                     class="aspect-[1.26] object-cover object-center w-[404px] overflow-hidden self-center ml-0 max-w-full" />
-                    <div class="text-white text-6xl font-bold font-['Poppins'] self-center absolute">We serve all  <br/>Provinces <br/>in Canada</div>
-                  </div>
+                  <div class="text-white text-6xl font-bold font-['Poppins'] self-center absolute">We serve all
+                    <br />Provinces <br />in Canada</div>
+                </div>
               </div>
             </div>
           </div>
@@ -639,6 +632,8 @@
       </div>
     </div>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
