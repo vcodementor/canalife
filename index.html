@@ -22,9 +22,14 @@
 
 <body>
   <div class="bg-white flex flex-col">
-    <div class="flex-col overflow-hidden self-stretch relative z-[1] flex min-h-[1076px] w-full pb-52 px-5 max-md:max-w-full">
+    <div class="bg-orange-500 flex-col overflow-hidden self-stretch relative z-[1] flex min-h-[1076px] w-full pb-52 px-5 max-md:max-w-full">
       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ab5b3be-e346-406e-a87a-a54b1f071e6c?"
         class="absolute z-[-1] h-full w-full object-cover object-center inset-0" />
+        <!-- <div class="absolute z-[-1] h-full w-full object-cover object-center inset-0" >
+          <img class="union" src="./assets/icons/union-2.svg">
+          <img class="img" src="./assets/icons/union-1.svg">
+          <img class="union-2" src="./assets/icons/union.svg">
+        </div> -->
       <div class="relative self-stretch flex w-full flex-col -mr-5 max-md:max-w-full">
         <div class="bg-zinc-100 self-stretch flex w-full flex-col pt-12 pb-4 px-5 max-md:max-w-full">
           <div
@@ -151,7 +156,7 @@
             </div>
           </div>
           <div class="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0">
-            <div class="relative swiper-container flex flex-col pl-5 max-md:max-w-full max-md:mt-6">
+            <div class="swiper relative flex flex-col pl-5 max-md:max-w-full max-md:mt-6" id="home-hero-slider">
               <div class="swiper-wrapper flex w-[390px] max-w-full grow flex-col ml-5 self-start max-md:ml-2.5">
                 <div class="swiper-slide h-auto flex-col shadow-[0px_4px_25px_-8px_rgba(244,120,32,0.26)] overflow-hidden self-stretch relative flex aspect-[0.7878787878787878] w-full pl-0 pr-5 pt-9 pb-14">
                   <img loading="lazy" srcset="./assets/imgs/rectangle-10.png"
@@ -196,27 +201,25 @@
                 </div>
                 </div> -->
               </div>
-               <!-- Add pagination and navigation buttons if desired -->
                <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="relative text-white text-4xl font-bold self-center mb-0 mt-24 whitespace-nowrap max-md:mt-10 max-md:mb-2.5">
+      <div class="relative text-white text-4xl font-bold self-center mb-0 mt-24 whitespace-nowrap max-md:mt-10 max-md:mb-2.5">
         Top Categories
       </div>
     </div>
-    <div class="bg-orange-500 self-stretch flex w-full pb-0 flex-col pt-64 px-5 max-md:max-w-full">
+    <div class="bg-orange-500 self-stretch flex w-full pb-0 flex-col px-5 max-md:max-w-full">
       <div
-        class="shadow-[0px_4px_4px_0px_rgba(0,0,0,0.03)] bg-white self-center z-[1] flex w-full max-w-[1312px] flex-col px-5 py-12 rounded-[30px] max-md:max-w-full">
-        <div class="swiper-container self-stretch ml-2.5 mr-3 max-md:max-w-full max-md:mr-2.5" id="top-categories-slider">
-          <div class="swiper-wrapper gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-            <div class="swiper-slide flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+        class="swiper shadow-[0px_4px_4px_0px_rgba(0,0,0,0.03)] bg-white self-center z-[1] flex w-full max-w-[1312px] flex-col px-5 py-12 rounded-[30px] max-md:max-w-full">
+        <div class="self-stretch ml-2.5 mr-3 max-md:max-w-full max-md:mr-2.5" id="top-categories-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div
                 class="shadow-[0px_4px_70px_13px_rgba(0,0,0,0.10)] bg-red-200 flex w-auto grow flex-col flex-1 mx-auto pl-4 pr-4 pt-5 pb-11 rounded-[30px] max-md:mt-6">
                 <img loading="lazy" srcset="./assets/imgs/WavyZ3-1-1.png"
-                  class="aspect-[0.82] object-cover object-center w-auto overflow-hidden self-stretch" />
+                  class="aspect-[0.82] rounded-[30px] object-cover object-center w-auto overflow-hidden self-stretch" />
                 <div class="text-orange-500 text-center text-2xl font-bold leading-8 self-center w-full mt-6">
                   Dried Magic
                   <br />
@@ -224,25 +227,35 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+            <div class="swiper-slide ">
               <div
                 class="shadow-[0px_4px_70px_13px_rgba(0,0,0,0.10)] bg-red-200 flex  w-auto grow flex-col flex-1 mx-auto pl-4 pr-4 pt-5 pb-32 rounded-[30px] max-md:mt-6">
                 <img loading="lazy" srcset="./assets/imgs/WavyZ3-1-2.png"
-                  class="aspect-[0.82] object-cover object-center  w-auto overflow-hidden self-stretch -mb-6 max-md:mb-2.5" />
+                  class="aspect-[0.82] rounded-[30px] object-cover object-center  w-auto overflow-hidden self-stretch -mb-6 max-md:mb-2.5" />
+                  <div class="text-orange-500 text-center text-2xl font-bold leading-8 self-center w-full mt-6">
+                    Shrom
+                    <br />
+                    Edibles
+                  </div>
               </div>
             </div>
-            <div class="swiper-slide flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+            <div class="swiper-slide ">
               <div
                 class="shadow-[0px_4px_70px_13px_rgba(0,0,0,0.10)] bg-red-200 flex  w-auto grow flex-col flex-1 mx-auto pl-4 pr-4 pt-5 pb-32 rounded-[30px] max-md:mt-6">
                 <img loading="lazy" srcset="./assets/imgs/0-1-7.png"
-                  class="aspect-[0.82] object-cover object-center  w-auto overflow-hidden self-stretch -mb-6 max-md:mb-2.5" />
+                  class="aspect-[0.82] rounded-[30px] object-cover object-center  w-auto overflow-hidden self-stretch -mb-6 max-md:mb-2.5" />
+                <div class="text-orange-500 text-center text-2xl font-bold leading-8 self-center w-full mt-6">
+                    Magic
+                    <br />
+                    Mushrooms Tea
+                </div>
               </div>
             </div>
-            <div class="swiper-slide flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+            <div class="swiper-slide ">
               <div
                 class="shadow-[0px_4px_70px_13px_rgba(0,0,0,0.10)] bg-red-200 flex  w-auto grow flex-col flex-1 mx-auto pl-4 pr-4 pt-5 pb-9 rounded-[30px] max-md:mt-6">
                 <img loading="lazy" srcset="./assets/imgs/WavyZ3-1-4.png"
-                  class="aspect-[0.82] object-cover object-center  w-auto overflow-hidden self-stretch" />
+                  class="aspect-[0.82] rounded-[30px] object-cover object-center  w-auto overflow-hidden self-stretch" />
                 <div class="text-orange-500 text-center text-2xl font-bold leading-8 self-center w-full mt-6">
                   Microdosing
                   <br />
@@ -250,11 +263,23 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div
+                class="shadow-[0px_4px_70px_13px_rgba(0,0,0,0.10)] bg-red-200 flex  w-auto grow flex-col flex-1 mx-auto pl-4 pr-4 pt-5 pb-32 rounded-[30px] max-md:mt-6">
+                <img loading="lazy" srcset="./assets/imgs/0-1-7.png"
+                  class="aspect-[0.82] rounded-[30px] object-cover object-center  w-auto overflow-hidden self-stretch -mb-6 max-md:mb-2.5" />
+                  <div class="text-orange-500 text-center text-2xl font-bold leading-8 self-center w-full mt-6">
+                    Magic
+                    <br />
+                    Mushrooms Tea
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="self-center flex w-full max-w-[1307px] items-start justify-between gap-5 mt-32 px-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
+    <!-- <div class="self-center flex w-full max-w-[1307px] items-start justify-between gap-5 mt-32 px-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
       <div class="self-stretch flex flex-col">
         <div class="text-black text-4xl font-bold self-end whitespace-nowrap max-md:mr-1">
           Getting to
@@ -268,8 +293,8 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore.
       </div>
-    </div>
-    <div class="shadow-[0px_0px_4px_17px_rgba(0,0,0,0.03)] bg-white flex w-[663px] max-w-full flex-col ml-24 mt-44 pt-12 pb-10 px-5 rounded-[30px] self-start max-md:mt-10">
+    </div> -->
+    <!-- <div class="shadow-[0px_0px_4px_17px_rgba(0,0,0,0.03)] bg-white flex w-[663px] max-w-full flex-col ml-24 mt-44 pt-12 pb-10 px-5 rounded-[30px] self-start max-md:mt-10">
       <div class="self-center flex w-full flex-col max-md:max-w-full">
         <div class="text-orange-500 text-4xl font-bold w-full self-start max-md:max-w-full">
           <span class="text-black">Lorem ipsum dolor sit a sectetur</span>
@@ -289,22 +314,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class=" relative bg-zinc-100 self-center flex w-full max-w-[1312px] flex-col mt-52 pt-12 pb-8 px-5 rounded-[30px] max-md:max-w-full max-md:mt-10">
+    </div> -->
+    <div class="relative bg-zinc-100 self-center flex w-full max-w-[1312px] flex-col mt-52 pt-12 pb-8 px-5 rounded-[30px] max-md:max-w-full max-md:mt-10">
       <div class="text-orange-500 text-4xl font-bold ml-10 self-start whitespace-nowrap max-md:ml-2.5">
         Some Awesome
       </div>
       <div class="text-black text-4xl font-bold ml-10 mt-3.5 self-start whitespace-nowrap max-md:ml-2.5">
         Review Highlights
       </div>
-      <div class="self-center w-full max-w-[1270px] mt-10 max-md:max-w-full">
-        <div class="swiper-container">
-          <div class="swiper-wrapper gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+      <div class="swiper self-center w-full max-w-[1270px] mt-10 max-md:max-w-full">
+        <div class="" id="testonominal-slider">
+          <div class="swiper-wrapper">
 
-            <!-- Slide 1 -->
-
-            <!-- Your card content for Slide 1 -->
-            <div class="swiper-slide flex flex-col items-stretch w-full ml-5 max-md:w-full max-md:ml-0">
+            <div class="swiper-slide">
               <div
                 class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-10 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
                 <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
@@ -321,10 +343,7 @@
               </div>
             </div>
 
-
-            <!-- Slide 2 -->
-            <!-- Your card content for Slide 2 -->
-            <div class="swiper-slide flex flex-col items-stretch w-full max-md:w-full max-md:ml-0">
+            <div class="swiper-slide">
               <div
                 class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-9 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
                 <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
@@ -341,18 +360,49 @@
               </div>
             </div>
 
-            <!-- Add more slides as needed -->
+            <div class="swiper-slide ">
+              <div
+                class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-10 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
+                <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua
+                </div>
+                <img loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfdf6edc-e475-4b64-8a06-11404b23af09?"
+                  class="aspect-square object-cover object-center w-[66px] overflow-hidden self-center max-w-full mt-10" />
+                <div class="text-black text-center text-base self-center mt-4 whitespace-nowrap">
+                  John Doe 1
+                </div>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div
+                class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] bg-white flex grow flex-col w-full mx-auto pt-16 pb-9 px-5 rounded-3xl max-md:max-w-full max-md:mt-2.5">
+                <div class="text-orange-500 text-center text-xl self-center max-w-[458px] max-md:max-w-full">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua
+                </div>
+                <img loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e51abd0e-f5f1-46bf-9ef5-37edb00c0311?"
+                  class="aspect-square object-cover object-center w-[66px] overflow-hidden self-center max-w-full mt-10" />
+                <div class="text-black text-center text-base self-center mt-4 whitespace-nowrap">
+                  Mary Jane 1
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Add pagination and navigation buttons if desired -->
           <div class="swiper-pagination"></div>
           <img loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/93b84ea6-818d-4369-892e-c80fdd402a08?"
-            class="swiper-button-prev aspect-square object-cover object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
+            class="swiper-button-prev aspect-square object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
           <img loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3687a4b-1f25-4b65-a965-cb5e00c81dc3?"
-            class="swiper-button-next aspect-square object-cover object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
+            class="swiper-button-next aspect-square object-center w-[30px] overflow-hidden max-w-full my-auto max-md:mt-10" />
         </div>
       </div>
     </div>
@@ -362,7 +412,7 @@
         <span class="text-orange-500">Perks</span>
         <span class="text-black">for you</span>
       </div>
-      <div class="grid grid-cols-3 gap-3 ">
+      <div class="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-3  ">
         <div class="shadow-[0px_4px_39px_0px_rgba(0,0,0,0.04)] flex w-[426px] flex-col rounded-3xl">
           <div class="bg-white self-stretch flex grow flex-col w-full pl-px py-16 rounded-3xl max-md:max-w-full">
             <img loading="lazy" srcset="./assets/imgs/0-1-7.png"
