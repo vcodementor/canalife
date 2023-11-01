@@ -1,3 +1,17 @@
+window.addEventListener("load", function () {
+  // Page has finished loading, hide the loader
+  setTimeout(function() {
+    //your code to be executed after 1 second
+    document.getElementById("loader-container").style.display = "none";
+  }, 500);
+
+});
+
+// Show the loader while the page is still loading
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("loader-container").style.display = "flex";
+});
+
 var swiper = new Swiper('#testonominal-slider', {
     loop: true,
     // centeredSlides: true,
